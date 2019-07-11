@@ -19,14 +19,16 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-      func readPlistFile()
+      func readPlistFile() -> Bool
         {
         let plist=Bundle.main.path(forResource: "UserInfo", ofType: "plist")
             if let dict = NSDictionary(contentsOfFile: plist!)
             {
             let users = dict["Users"] as? [[String:Any]]
                 for user in users!{
-                    
+                    let username=user["username"] as! String
+                    let password=user["password"] as! String
+    
                 }
             }
     }
