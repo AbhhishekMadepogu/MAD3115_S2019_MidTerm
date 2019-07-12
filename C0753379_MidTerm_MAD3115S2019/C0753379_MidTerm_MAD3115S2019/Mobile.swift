@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class mobile:Bill{
+class Mobile:Bill{
     var mobileModelName:String?
     var mobileNumber:String?
     var internetGbUsed:Int?

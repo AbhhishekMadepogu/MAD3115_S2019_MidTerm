@@ -7,6 +7,10 @@
 //
 
 import UIKit
+enum PickerType:Int {
+    case BILL = 0
+    
+}
 
 
 class AddNewBillViewController: UIViewController {
@@ -18,7 +22,7 @@ class AddNewBillViewController: UIViewController {
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "EEEE, dd-MMM-yyyy hh:mm"
         
-        bill.date=dateFormat.string(from: date)
+        //bill.date=dateFormat.string(from: date)
         
     }
     let billsType=["Mobile","Hydro","Internet"]
@@ -41,6 +45,12 @@ class AddNewBillViewController: UIViewController {
 
 }
 extension AddNewBillViewController:UIPickerViewDelegate{
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.billsType[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let billSelected=self.billsType[row]
+    }
     
 }
 extension AddNewBillViewController:UIPickerViewDataSource{
@@ -51,9 +61,7 @@ extension AddNewBillViewController:UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return billsType.count
     }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        <#code#>
-    }
+    
     
     
 }

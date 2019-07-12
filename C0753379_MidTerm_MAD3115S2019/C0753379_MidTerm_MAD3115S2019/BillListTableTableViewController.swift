@@ -13,11 +13,23 @@ class BillListTableTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        //creating mobile bills
+        var mb1:Mobile=Mobile.init(mobileModelName: "Iphone", mobileNummber: "4379834737", internetGbUsed: 35, minutesUsed: 100, billId: 01, billType: "Mobile", billDate:"10/05/2019" ,billTotal:200)
+        var mb2:Mobile=Mobile.init(mobileModelName: "Android", mobileNummber: "4379834737", internetGbUsed: 40, minutesUsed: 200, billId: 02, billType: "Mobile", billDate: "20/05/2019",billTotal:400)
+        //creating hydro bills
+        var hb1:Hydro=Hydro.init(agencyName: "Ontario", unitConsumed: "114", billId: 01, billType: "Hydro", billDate: "20/05/2019",billTotal:500)
+        var hb2:Hydro=Hydro.init(agencyName: "Ontario", unitConsumed: "110", billId: 02, billType: "Hydro", billDate: "20/05/2019",billTotal:600)
+        // creating Internet bills
+        var ib1:Internet=Internet.init(providerName: "Bell", InternetGbUsed: 89, billId: 01, billType: "Internet", billDate: "10/05/2019",billTotal:600)
+        var ib2:Internet=Internet.init(providerName: "Rogers", InternetGbUsed: 90, billId: 02, billType: "Internet", billDate: "20/05/2019",billTotal:700)
+        //CUSTOMERS CREATION
+        
+        
+        var c1:Customer=Customer.init(customerId: 01, firstName: "Abhishek", lastName: "Madepogu", emailAddress: "abhishek.madepogu@gmail.com", billsArray: [mb1,hb1,ib1])
+        Customer.addCUSTOMER(customer: c1)
+        var c2:Customer=Customer.init(customerId: 02, firstName: "Ashish", lastName: "Madepogu", emailAddress: "ashish.madepogu@gmail.com", billsArray: [mb2,hb2,ib2])
+        Customer.addCUSTOMER(customer: c2)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
