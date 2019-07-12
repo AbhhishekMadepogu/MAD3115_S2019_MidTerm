@@ -15,6 +15,7 @@
 		6073F37522D7F21E00E8E6AC /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6073F37422D7F21E00E8E6AC /* UserInfo.plist */; };
 		6073F37B22D7F67600E8E6AC /* BillListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F37A22D7F67600E8E6AC /* BillListTableTableViewController.swift */; };
 		6073F37D22D7FF3900E8E6AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F37C22D7FF3900E8E6AC /* User.swift */; };
+		6073F38122D805C000E8E6AC /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F38022D805C000E8E6AC /* ShowBillDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6073F37422D7F21E00E8E6AC /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		6073F37A22D7F67600E8E6AC /* BillListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableTableViewController.swift; sourceTree = "<group>"; };
 		6073F37C22D7FF3900E8E6AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6073F38022D805C000E8E6AC /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6073F36022D7F16200E8E6AC /* AppDelegate.swift */,
 				6073F36222D7F16200E8E6AC /* LoginViewController.swift */,
 				6073F37C22D7FF3900E8E6AC /* User.swift */,
+				6073F38022D805C000E8E6AC /* ShowBillDetailsViewController.swift */,
 				6073F37A22D7F67600E8E6AC /* BillListTableTableViewController.swift */,
 				6073F36422D7F16200E8E6AC /* Main.storyboard */,
 				6073F36722D7F16300E8E6AC /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6073F38122D805C000E8E6AC /* ShowBillDetailsViewController.swift in Sources */,
 				6073F37D22D7FF3900E8E6AC /* User.swift in Sources */,
 				6073F36322D7F16200E8E6AC /* LoginViewController.swift in Sources */,
 				6073F36122D7F16200E8E6AC /* AppDelegate.swift in Sources */,

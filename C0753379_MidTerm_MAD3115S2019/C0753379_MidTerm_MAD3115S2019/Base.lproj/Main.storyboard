@@ -94,5 +94,40 @@
             </objects>
             <point key="canvasLocation" x="1133" y="116"/>
         </scene>
+        <!--Safari View Controller-->
+        <scene sceneID="wR8-Ng-9SM">
+            <objects>
+                <viewController id="VDM-3f-7S2" customClass="SFSafariViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H55-nQ-zwy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgx-AN-n5d">
+                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Bill Details" id="nzF-Ej-eCI">
+                                        <barButtonItem key="rightBarButtonItem" title="Bill  Details" style="plain" id="gAq-oW-BAq">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qob-h5-FpK">
+                                                <rect key="frame" x="348" y="7" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <connections>
+                                                <action selector="btnAddBill:" destination="H55-nQ-zwy" id="CYH-Mu-cqe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xQz-Jq-uto"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgp-Js-4oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155" y="116"/>
+        </scene>
     </scenes>
 </document>
