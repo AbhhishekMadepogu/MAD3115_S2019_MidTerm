@@ -15,6 +15,7 @@ class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "BillsCell") as! UITableViewCell
+        return cell
     }
     
     @IBOutlet weak var lblCustomerId: UILabel!

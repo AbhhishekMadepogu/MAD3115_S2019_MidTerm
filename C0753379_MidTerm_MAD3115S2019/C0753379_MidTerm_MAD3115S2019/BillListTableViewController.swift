@@ -16,8 +16,11 @@ class BillListTableViewController: UIViewController,UITabBarDelegate,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let customer=customers[indexPath.row]
         let cell=tableView.dequeueReusableCell(withIdentifier: "customercell")as! UITableViewCell
-        cell.textLabel?.text=customers[indexPath.row].fullName
+        for customer in customers{
+            cell.setcell(customer)
+        }
         let tapGesture=UITapGestureRecognizer(target: self, action: #selector(self.tapBtnAction(_:)))
         cell.tag=indexPath.row
         cell.addGestureRecognizer(tapGesture)
@@ -62,8 +65,8 @@ class BillListTableViewController: UIViewController,UITabBarDelegate,UITableView
     }
     */
     @objc func tapBtnAction(_ sender:UITapGestureRecognizer){
-        Customer.thisCustomer=self.customers[(sender.view?.tag)]
-        self.performSegue(withIdentifier: "Details", sender: self)
+        //Customer.thisCustomer=self.customers[(sender.view?.tag)]
+        self.performSegue(withIdentifier: "DetailsSegue", sender: self)
     }
 
 }
