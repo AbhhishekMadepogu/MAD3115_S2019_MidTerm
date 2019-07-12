@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
 
 }
     @IBAction func unwindLogoutFromAnyScreen(storyboardSegue:UIStoryboardSegue){
-        let s=storyboardSegue.source as! BillListTableViewController
+        let s=storyboardSegue.source as! BillListtableViewController
     }
     
 }

@@ -20,7 +20,7 @@
 		6073F38922D80A9C00E8E6AC /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F38822D80A9C00E8E6AC /* Hydro.swift */; };
 		6073F38B22D80AD700E8E6AC /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F38A22D80AD700E8E6AC /* Customer.swift */; };
 		6073F38D22D80D3900E8E6AC /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F38C22D80D3900E8E6AC /* AddNewBillViewController.swift */; };
-		6073F39522D906A200E8E6AC /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F39422D906A200E8E6AC /* CustomerTableViewCell.swift */; };
+		6073F39D22D922AE00E8E6AC /* BillListtableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073F39C22D922AE00E8E6AC /* BillListtableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		6073F38822D80A9C00E8E6AC /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		6073F38A22D80AD700E8E6AC /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		6073F38C22D80D3900E8E6AC /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
-		6073F39422D906A200E8E6AC /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		6073F39C22D922AE00E8E6AC /* BillListtableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListtableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			children = (
 				6073F36022D7F16200E8E6AC /* AppDelegate.swift */,
 				6073F36222D7F16200E8E6AC /* LoginViewController.swift */,
-				6073F39422D906A200E8E6AC /* CustomerTableViewCell.swift */,
+				6073F39C22D922AE00E8E6AC /* BillListtableViewController.swift */,
 				6073F38022D805C000E8E6AC /* ShowBillDetailsViewController.swift */,
 				6073F38C22D80D3900E8E6AC /* AddNewBillViewController.swift */,
 				6073F36422D7F16200E8E6AC /* Main.storyboard */,
@@ -163,12 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6073F39D22D922AE00E8E6AC /* BillListtableViewController.swift in Sources */,
 				6073F38122D805C000E8E6AC /* ShowBillDetailsViewController.swift in Sources */,
 				6073F38B22D80AD700E8E6AC /* Customer.swift in Sources */,
 				6073F38722D80A4700E8E6AC /* Internet.swift in Sources */,
 				6073F36322D7F16200E8E6AC /* LoginViewController.swift in Sources */,
 				6073F38922D80A9C00E8E6AC /* Hydro.swift in Sources */,
-				6073F39522D906A200E8E6AC /* CustomerTableViewCell.swift in Sources */,
 				6073F38522D809D800E8E6AC /* Mobile.swift in Sources */,
 				6073F36122D7F16200E8E6AC /* AppDelegate.swift in Sources */,
 				6073F38D22D80D3900E8E6AC /* AddNewBillViewController.swift in Sources */,

@@ -25,6 +25,8 @@ class AddNewBillViewController: UIViewController {
         //bill.date=dateFormat.string(from: date)
         
     }
+    @IBAction func btnBillAdd(_ sender: UIButton) {
+    }
     let billsType=["Mobile","Hydro","Internet"]
     override func viewDidLoad() {
         super.viewDidLoad()

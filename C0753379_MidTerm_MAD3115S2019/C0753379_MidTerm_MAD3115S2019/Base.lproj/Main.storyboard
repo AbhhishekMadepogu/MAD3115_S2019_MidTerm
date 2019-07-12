@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZR4-p6-ioL">
                                 <rect key="frame" x="146" y="358" width="78" height="30"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
-        <!--Bill List Table View Controller-->
+        <!--Bill Listtable View Controller-->
         <scene sceneID="uhC-cF-Lry">
             <objects>
-                <viewController id="Y9X-OZ-n3h" customClass="BillListTableViewController" customModule="C0753379_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y9X-OZ-n3h" customClass="BillListtableViewController" customModule="C0753379_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exY-df-Mx9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@
                                         <navigationItem title="Customers" id="sJj-qE-jds">
                                             <barButtonItem key="leftBarButtonItem" title="Logout" id="tBw-Wn-boc">
                                                 <connections>
-                                                    <segue destination="7hf-yA-t3Y" kind="unwind" unwindAction="unwindLogoutFromAnyScreenWithStoryboardSegue:" id="jIs-Um-eX8"/>
+                                                    <segue destination="7hf-yA-t3Y" kind="unwind" unwindAction="unwindLogoutFromAnyScreenWithStoryboardSegue:" id="eaM-9w-hVy"/>
                                                 </connections>
                                             </barButtonItem>
                                         </navigationItem>
@@ -102,19 +102,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EfH-J3-3hL" id="vsV-zu-CgT" customClass="CustomerTableViewCell" customModule="C0753379_MidTerm_MAD3115S2019" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYT-8b-ZAS">
-                                                    <rect key="frame" x="33" y="39" width="86" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="lblCustomers" destination="cYT-8b-ZAS" id="vF6-zT-y7s"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -126,6 +114,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tblCustomer" destination="BmM-HH-3VK" id="vkC-cQ-mqS"/>
+                        <outlet property="tblbills" destination="BmM-HH-3VK" id="RWz-Dh-lVO"/>
                         <segue destination="VDM-3f-7S2" kind="show" identifier="DetailsSegue" id="UCt-u2-OeR"/>
                     </connections>
                 </viewController>
@@ -332,6 +321,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLx-Di-rkh">
+                                <rect key="frame" x="130" y="629" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="btnBillAdd:" destination="Gll-bx-9Fc" eventType="touchUpInside" id="Zit-Px-lh4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GR1-VS-Xiw"/>
