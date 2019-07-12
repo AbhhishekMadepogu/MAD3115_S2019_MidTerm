@@ -17,6 +17,7 @@ class Customer{
         return "\(firstName!) \(lastName!)"
     }
     var emailAddress:String?
+
     lazy var billsArray:[Bill]=[Bill]()
     var billTotal:Float{
         var finalBillTotal:Float = 0.0
@@ -33,6 +34,10 @@ class Customer{
         self.lastName=lastName
         self.emailAddress=emailAddress
         self.billsArray=billsArray
+    }
+    func thiscustomer()
+    {
+        self.thiscustomer()
     }
     
     

@@ -73,8 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				6073F36022D7F16200E8E6AC /* AppDelegate.swift */,
-				6073F39222D8E1B200E8E6AC /* BillListTableViewController.swift */,
 				6073F36222D7F16200E8E6AC /* LoginViewController.swift */,
+				6073F39222D8E1B200E8E6AC /* BillListTableViewController.swift */,
 				6073F38022D805C000E8E6AC /* ShowBillDetailsViewController.swift */,
 				6073F38C22D80D3900E8E6AC /* AddNewBillViewController.swift */,
 				6073F36422D7F16200E8E6AC /* Main.storyboard */,

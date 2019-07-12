@@ -10,6 +10,7 @@ import UIKit
 var customers=Array<Customer>()
 
 class BillListTableViewController: UIViewController,UITabBarDelegate,UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return customers.count
     }
@@ -61,7 +62,7 @@ class BillListTableViewController: UIViewController,UITabBarDelegate,UITableView
     }
     */
     @objc func tapBtnAction(_ sender:UITapGestureRecognizer){
-        Customer.activeCustomer=self.customers[(sender.view?.tag)!]
+        //Customer.thiscustomer=self.customers[(sender.view?.tag)!]
         self.performSegue(withIdentifier: "Details", sender: self)
     }
 
