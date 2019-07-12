@@ -27,7 +27,8 @@ class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITabl
     @IBOutlet weak var tblBills: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-lblCustomerId.text=
+        
+
     }
     
 

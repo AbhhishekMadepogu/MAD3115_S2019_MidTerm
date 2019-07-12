@@ -21,8 +21,7 @@ class AddNewBillViewController: UIViewController {
     @IBOutlet weak var lblGbUsed: UITextField!
     
     @IBOutlet weak var lblProvider: UITextField!
-    @IBAction func datePicker(_ sender: UIDatePicker) {let date = sender.date
-        
+    @IBAction func datePicker(_ sender: UIDatePicker) {
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "EEEE, dd-MMM-yyyy hh:mm"
         
@@ -30,6 +29,9 @@ class AddNewBillViewController: UIViewController {
         
     }
     @IBAction func btnBillAdd(_ sender: UIButton) {
+        Bill.init(billId: 1, billType: pickerBillType, billDate: Date, billTotal: <#T##Float#>)
+        
+        
     }
     let billsType=["Mobile","Hydro","Internet"]
     override func viewDidLoad() {
