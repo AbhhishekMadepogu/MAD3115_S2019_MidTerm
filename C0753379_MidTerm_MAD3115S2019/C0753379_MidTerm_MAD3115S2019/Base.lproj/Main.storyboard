@@ -199,7 +199,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="bills" id="5dm-KD-WzX">
-                                        <barButtonItem key="rightBarButtonItem" title="Add Bill" id="mcA-hn-B4S"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Add Bill" id="mcA-hn-B4S">
+                                            <connections>
+                                                <segue destination="Gll-bx-9Fc" kind="show" id="2Wu-Ta-Dyd"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
