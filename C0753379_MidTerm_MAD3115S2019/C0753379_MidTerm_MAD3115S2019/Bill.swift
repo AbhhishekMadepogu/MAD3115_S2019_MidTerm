@@ -19,4 +19,9 @@ class Bill{
         self.billTotal=billTotal
     }
     var billsArray=[Bill]()
+    
+     func addBill(Bill:Bill)
+    {
+        billsArray.append(Bill)
+    }
 }
