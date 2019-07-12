@@ -26,7 +26,7 @@ class Customer{
         return finalBillTotal
     }
     
-    private static var  customersDict=[Int:Customer]()
+     var  customersDict=[Customer]()
     init(customerId:Int,firstName:String,lastName:String,emailAddress:String,billsArray:[Bill]) {
         self.customerId=customerId
         self.firstName=firstName
@@ -34,9 +34,6 @@ class Customer{
         self.emailAddress=emailAddress
         self.billsArray=billsArray
     }
-    static func addCUSTOMER(customer:Customer)
-    {
-        customersDict.updateValue(customer, forKey: customer.customerId!)
-    }
+    
     
 }

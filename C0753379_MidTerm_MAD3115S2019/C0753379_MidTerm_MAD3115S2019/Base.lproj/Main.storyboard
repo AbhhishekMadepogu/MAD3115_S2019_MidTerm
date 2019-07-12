@@ -59,40 +59,37 @@
                         <outlet property="switchRememberme" destination="DzP-X0-HzO" id="b9r-7S-enw"/>
                         <outlet property="txtPassword" destination="CeE-7y-wdt" id="KNc-g5-EeH"/>
                         <outlet property="txtUserName" destination="T6t-7i-mWX" id="E5a-S0-zJN"/>
-                        <segue destination="eN1-sx-fZj" kind="show" identifier="CustomerSegue" id="8md-CZ-j8x"/>
+                        <segue destination="Y9X-OZ-n3h" kind="show" identifier="CustomerSegue" id="x8b-3v-w58"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="RLq-si-qiT">
+        <!--Bill List Table View Controller-->
+        <scene sceneID="uhC-cF-Lry">
             <objects>
-                <tableViewController id="eN1-sx-fZj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oUa-7c-0Ud">
+                <viewController id="Y9X-OZ-n3h" customClass="BillListTableViewController" customModule="C0753379_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exY-df-Mx9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BmM-HH-3VK">
+                                <rect key="frame" x="0.0" y="22" width="414" height="874"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OxD-k4-uPz">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OxD-k4-uPz" id="eGw-vl-SfM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="eN1-sx-fZj" id="5D9-w4-3Fc"/>
-                            <outlet property="delegate" destination="eN1-sx-fZj" id="IAI-X7-xL8"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0jj-bM-TCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="fQ9-s9-Tiw"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblCustomer" destination="BmM-HH-3VK" id="vkC-cQ-mqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6l-fA-sSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="116"/>
+            <point key="canvasLocation" x="1102.8985507246377" y="110.49107142857143"/>
         </scene>
         <!--Show Bill Details View Controller-->
         <scene sceneID="wR8-Ng-9SM">
