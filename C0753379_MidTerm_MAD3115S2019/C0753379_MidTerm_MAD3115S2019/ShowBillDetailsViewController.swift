@@ -9,13 +9,19 @@
 import UIKit
 
 class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+    var customer:Customer?
+    var bills=Array<Bill>()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (Customer.thisCustomer?.billsArray.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "BillsCell") as! UITableViewCell
+        //cell.textLabel?.text=bills.[indexPath.row].billType
+        
         return cell
+        
     }
     
     @IBOutlet weak var lblCustomerId: UILabel!
@@ -26,7 +32,17 @@ class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITabl
     @IBOutlet weak var lbltotal: UILabel!
     @IBOutlet weak var tblBills: UITableView!
     override func viewDidLoad() {
+        bills=customer!.billsArray
         super.viewDidLoad()
+        //lblCustomerId.text=String(customer?.customerId) as String
+        lblCustomerName.text=customer?.fullName
+        lblcustomeremail.text=customer?.emailAddress
+         var billtotals=Float()
+        for i in bills{
+            var billtotals=billtotals+i.billTotal!
+            
+        }
+        lbltotal.text=String(billtotals)
         
 
     }

@@ -114,7 +114,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tblbills" destination="BmM-HH-3VK" id="RWz-Dh-lVO"/>
-                        <segue destination="VDM-3f-7S2" kind="show" identifier="DetailsSegue" id="UCt-u2-OeR"/>
+                        <segue destination="VDM-3f-7S2" kind="show" identifier="BillDetails" id="tVv-iV-cVl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6l-fA-sSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +125,7 @@
         <!--Show Bill Details View Controller-->
         <scene sceneID="wR8-Ng-9SM">
             <objects>
-                <viewController id="VDM-3f-7S2" customClass="ShowBillDetailsViewController" customModule="C0753379_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Details" id="VDM-3f-7S2" customClass="ShowBillDetailsViewController" customModule="C0753379_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H55-nQ-zwy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgp-Js-4oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2507" y="134"/>
+            <point key="canvasLocation" x="3152" y="110"/>
         </scene>
         <!--Add New Bill View Controller-->
         <scene sceneID="WtP-bM-mUj">
@@ -342,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mw-CE-EAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3583" y="134"/>
+            <point key="canvasLocation" x="4158" y="116"/>
         </scene>
     </scenes>
 </document>

@@ -10,18 +10,26 @@ import UIKit
 
 class BillListtableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var customers=Array<Customer>()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return customers.count
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedcustomer=customers[indexPath.row]
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            var secondController=segue.destination as! ShowBillDetailsViewController
+            secondController.customer=selectedcustomer
+        }
+        performSegue(withIdentifier: "BillDetails", sender: self)
+        
+        
+        
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let customer=customers[indexPath.row]
         let cell=tableView.dequeueReusableCell(withIdentifier: "customercell")as! UITableViewCell
         cell.textLabel?.text=customers[indexPath.row].fullName
         
-        let tapGesture=UITapGestureRecognizer(target: self, action: #selector(self.tapBtnAction(_:)))
-        cell.tag=indexPath.row
-        cell.addGestureRecognizer(tapGesture)
         return cell
     }
     
@@ -63,9 +71,5 @@ class BillListtableViewController: UIViewController,UITableViewDelegate,UITableV
         // Pass the selected object to the new view controller.
     }
     */
-    @objc func tapBtnAction(_ sender:UITapGestureRecognizer){
-        Customer.thisCustomer=self.customers[((sender.view?.tag)!)]
-        self.performSegue(withIdentifier: "Details", sender: self)
-        
-    }
+    
 }

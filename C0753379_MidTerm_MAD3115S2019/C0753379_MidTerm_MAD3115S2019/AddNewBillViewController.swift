@@ -29,7 +29,7 @@ class AddNewBillViewController: UIViewController {
         
     }
     @IBAction func btnBillAdd(_ sender: UIButton) {
-        Bill.init(billId: 1, billType: pickerBillType, billDate: Date, billTotal: <#T##Float#>)
+        
         
         
     }
