@@ -8,10 +8,22 @@
 
 import UIKit
 
-class ShowBillDetailsViewController: UIViewController {
-
-    @IBAction func btnAddBill(_ sender: Any) {
+class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (Customer.thisCustomer?.billsArray.count)!
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell=tableView.dequeueReusableCell(withIdentifier: "BillsCell") as! UITableViewCell
+    }
+    
+    @IBOutlet weak var lblCustomerId: UILabel!
+    
+    @IBOutlet weak var lblCustomerName: UILabel!
+    @IBOutlet weak var lblcustomeremail: UILabel!
+    
+    @IBOutlet weak var lbltotal: UILabel!
+    @IBOutlet weak var tblBills: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

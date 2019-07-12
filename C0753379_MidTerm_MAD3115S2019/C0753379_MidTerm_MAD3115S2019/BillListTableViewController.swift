@@ -62,7 +62,7 @@ class BillListTableViewController: UIViewController,UITabBarDelegate,UITableView
     }
     */
     @objc func tapBtnAction(_ sender:UITapGestureRecognizer){
-        //Customer.thiscustomer=self.customers[(sender.view?.tag)!]
+        Customer.thisCustomer=self.customers[(sender.view?.tag)]
         self.performSegue(withIdentifier: "Details", sender: self)
     }
 

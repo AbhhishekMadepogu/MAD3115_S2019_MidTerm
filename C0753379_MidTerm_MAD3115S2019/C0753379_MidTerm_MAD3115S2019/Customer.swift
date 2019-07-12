@@ -8,7 +8,7 @@
 
 import Foundation
 class Customer{
-    
+    static var thisCustomer:Customer?
     var customerId:Int?
     var firstName:String?
     var lastName:String?
@@ -22,12 +22,12 @@ class Customer{
     var billTotal:Float{
         var finalBillTotal:Float = 0.0
         for i in billsArray {
-            //finalBillTotal = finalBillTotal + i.billTotal;
+            finalBillTotal = finalBillTotal + i.billTotal!;
         }
         return finalBillTotal
     }
     
-     var  customersDict=[Customer]()
+    
     init(customerId:Int,firstName:String,lastName:String,emailAddress:String,billsArray:[Bill]) {
         self.customerId=customerId
         self.firstName=firstName
@@ -35,10 +35,7 @@ class Customer{
         self.emailAddress=emailAddress
         self.billsArray=billsArray
     }
-    func thiscustomer()
-    {
-        self.thiscustomer()
-    }
+    
     
     
 }
