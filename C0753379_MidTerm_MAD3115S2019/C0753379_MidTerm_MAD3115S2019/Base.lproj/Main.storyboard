@@ -344,23 +344,5 @@
             </objects>
             <point key="canvasLocation" x="5068.115942028986" y="115.84821428571428"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qf3-kP-u2d">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fs2-cr-gPo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Pn-xK-3CN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Gll-bx-9Fc" kind="relationship" relationship="rootViewController" id="Cqf-bL-Sg4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rza-gf-cMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4157.971014492754" y="115.84821428571428"/>
-        </scene>
     </scenes>
 </document>
