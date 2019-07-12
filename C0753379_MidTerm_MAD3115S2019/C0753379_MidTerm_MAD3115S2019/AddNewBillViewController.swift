@@ -14,9 +14,13 @@ enum PickerType:Int {
 
 
 class AddNewBillViewController: UIViewController {
+    @IBOutlet weak var lblModel: UITextField!
     
+    @IBOutlet weak var lblMobileNumber: UITextField!
     @IBOutlet weak var pickerBillType: UIPickerView!
+    @IBOutlet weak var lblGbUsed: UITextField!
     
+    @IBOutlet weak var lblProvider: UITextField!
     @IBAction func datePicker(_ sender: UIDatePicker) {let date = sender.date
         
         let dateFormat = DateFormatter()

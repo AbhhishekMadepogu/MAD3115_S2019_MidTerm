@@ -113,7 +113,6 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tblCustomer" destination="BmM-HH-3VK" id="vkC-cQ-mqS"/>
                         <outlet property="tblbills" destination="BmM-HH-3VK" id="RWz-Dh-lVO"/>
                         <segue destination="VDM-3f-7S2" kind="show" identifier="DetailsSegue" id="UCt-u2-OeR"/>
                     </connections>
@@ -334,6 +333,10 @@
                         <viewLayoutGuide key="safeArea" id="GR1-VS-Xiw"/>
                     </view>
                     <connections>
+                        <outlet property="lblGbUsed" destination="ce8-pA-DVh" id="Wg0-eT-mNm"/>
+                        <outlet property="lblMobileNumber" destination="VMD-B1-kyO" id="LgR-s9-84p"/>
+                        <outlet property="lblModel" destination="eTN-mR-wRt" id="ov6-aA-o3P"/>
+                        <outlet property="lblProvider" destination="xly-2g-unO" id="tOt-wz-NEq"/>
                         <outlet property="pickerBillType" destination="JhU-4b-nD4" id="103-m9-PE4"/>
                     </connections>
                 </viewController>

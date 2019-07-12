@@ -28,6 +28,8 @@ class BillListtableViewController: UIViewController,UITableViewDelegate,UITableV
 
     @IBOutlet weak var tblbills: UITableView!
     override func viewDidLoad() {
+        self.tblbills.delegate=self
+        self.tblbills.dataSource=self
        
         super.viewDidLoad()
         var mb1:Mobile=Mobile.init(mobileModelName: "Iphone", mobileNummber: "4379834737", internetGbUsed: 35, minutesUsed: 100, billId: 01, billType: "Mobile", billDate:"10/05/2019" ,billTotal:200)
@@ -64,7 +66,6 @@ class BillListtableViewController: UIViewController,UITableViewDelegate,UITableV
     @objc func tapBtnAction(_ sender:UITapGestureRecognizer){
         Customer.thisCustomer=self.customers[((sender.view?.tag)!)]
         self.performSegue(withIdentifier: "Details", sender: self)
-        //Customer.thisCustomer=self.customers[(sender.view?.tag)]
-        self.performSegue(withIdentifier: "DetailsSegue", sender: self)
+        
     }
 }
