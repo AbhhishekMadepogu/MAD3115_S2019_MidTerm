@@ -10,9 +10,15 @@ import UIKit
 
 class CustomerTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lblCustomers: UILabel!
-    
-    func setcell(cust:Customer){
-        lblCustomers.text=Customer.fullName
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
 }

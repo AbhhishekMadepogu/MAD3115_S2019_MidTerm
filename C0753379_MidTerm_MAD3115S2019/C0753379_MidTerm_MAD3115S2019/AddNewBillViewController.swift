@@ -28,6 +28,7 @@ class AddNewBillViewController: UIViewController {
     let billsType=["Mobile","Hydro","Internet"]
     override func viewDidLoad() {
         super.viewDidLoad()
+       // pickerview
 
         // Do any additional setup after loading the view.
     }
