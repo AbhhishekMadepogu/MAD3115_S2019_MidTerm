@@ -34,8 +34,5 @@ class Customer{
         self.emailAddress=emailAddress
         self.billsArray=billsArray
     }
-    static func addCUSTOMER(customer:Customer)
-    {
-        customersDict.updateValue(customer, forKey: customer.customerId!)
-    }
+    
 }
